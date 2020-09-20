@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introducción Al Curso</title>
+
+        <!--1. Agregar la CDN de Bootstrap, con esto, obtenemos bootstrap desde un recurso remoto sin
+            Necesidad de tenerlo en el local-->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <!--Texto justificado, alineaciones izquerda-derecha-centro-->
+        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores harum accusantium ullam! Hic facilis sit, obcaecati aperiam sed alias corporis rerum ipsa dolores veritatis libero fugiat iure est tempore molestiae!</p>
+        
+        <p class="text-left">Titulo izquierda</p>
+        <p class="text-right">Titulo derecha</p>
+        <p class="text-center">Titulo centrado</p>
+
+        <!--Este concepto pretende transformar la alineación del texto horizontal dependiendo del tamaño de 
+            la pantalla-->
+        <hr>
+        <p class="text-sm-right">cuando la pantalla sea pequeña me alinearé a la derecha</p>
+
+        <p class="text-md-center">cuando la pantalla sea mediana me alinearé al centro</p>
+
+        <p class="text-lg-left text-right">cuando la pantalla sea grande me alinearé a la izquierda</p>
+
+        <p class="text-xl-center">cuando la pantalla sea muy grande me alinearé al centro</p>
+
+        <hr><hr><hr><br>
+
+        <!--Alineación vertical, con este tipo de alineación podemos indicar en qué parte se va a posicionar el texto, veámos-->
+
+        <span class="align-baseline bg-success">alineación por defecto</span>
+        <span class="align-top bg-success">alineación hacia arriba</span>
+        <span class="align-bottom bg-success">alineación hacia abajo</span>
+        <span class="align-middle bg-success">alineación al medio</span>
+
+
+        <span class="align-text-top bg-success">alineación de texto hacía arriba</span>
+        <span class="align-text-bottom bg-success">alineación de texto habia abajo</span>
+
+        <hr><hr><hr>
+        <!--Algo super importante, cambiar la disposición de los elementos:-->
+
+        <!--Cambiar elemento tipo bloque a en linea-->
+
+        <h1 class="bg-success">Soy un elemento tipo bloque</h1>
+        <h1 class="bg-success">Soy un elemento tipo bloque</h1>
+
+        <!--AHORA Vamos a convertir estos elementos a tipo linea d->display     -->
+        <br>
+        <h1 class="bg-success d-inline">Elemento convertido a linea</h1>
+        <h1 class="bg-success d-inline">Elemento convertido a linea</h1>
+        <hr>
+        <hr>
+        <!--Cambiar disposición de elemento en linea  a tipo bloque-->
+        <span class="bg-success">Soy un elemento en linea </span>
+        
+        <span class="bg-success d-block"> ahora soy un elemento tipo bloque</span>
+
+        <br>
+        <br>
+        
+
+        <!--Los div, son un caso especial, en este caso los vamos a convertir en elementos inline-block, -->
+
+
+        <div class="bg-success text-center" >
+            <h1>Hello world</h1>
+            <span>hola mundo</span>
+        </div>
+
+        <div class="bg-success text-center" >
+            <h1>Hello world</h1>
+            <span>hola mundo</span>
+        </div>
+
+        <br><br>
+
+        <div class="bg-success text-center d-inline-block" >
+            <h1>Ahora es un div inline block</h1>
+            <span>hola mundo</span>
+        </div>
+
+        <div class="bg-success text-center d-inline-block" >
+            <h1>También soy un div inline-block</h1>
+            <span>hola mundo</span>
+        </div>
+
+        <br>
+        <br>
+
+    </body>
+
+    <!--3. Pero antes de los archivos Javascript, Bootstrap necesita algunos elementos para trabajar: JQUERY, Popper-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+
+    <!--2. Agregando los archivos Javascript de bootstrap, estos son útiles si necesitamos por ejemplo disparar
+        Modals, disparar eventos, entre otros, ojo, agregar al final-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</html>

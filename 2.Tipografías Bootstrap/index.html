@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introducción Al Curso</title>
+
+        <!--1. Agregar la CDN de Bootstrap, con esto, obtenemos bootstrap desde un recurso remoto sin
+            Necesidad de tenerlo en el local-->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <!--Podemos modificar la disposición de los tag modificando de manera sencilla mediante las clases
+        h1,h2,h3...h6, también podemos editar parrafos-->
+        <h1 class="h5">Hola, Este es mi primer ejemplo de bootstrap</h1>
+        <h3 class="h1">Hola, Este es mi primer ejemplo de bootstrap</h3>
+        <h4 class="h2">Hola, Este es mi primer ejemplo de bootstrap</h4>
+        <h6 class="h1">Hola, Este es mi primer ejemplo de bootstrap</h6>
+
+        <p class="h2"> Estoy escribiendo un parrafo aplicando estilos como si fuese un h2</p>
+
+        <hr>
+
+        <!--Esta propiedad permite mostrar titulos aún mucho más grandes-->
+        <h1 class="display-1">Agregando un titulo inmenso mediante la clase display-1</h1>
+        <h1 class="display-4">Agregando un titulo inmenso mediante la clase display-4</h1>
+
+        <hr>
+        <!--La clase text-muted me permite agregar un texto muteado a nuestros títulos, parrafos,etc-->
+        <h1>Escribiendo un título, pero <span class="text-muted">Esto va a estar muteado</span></h1>
+        <hr>
+        <!--La clase lead permite agregar párrafos con tipografía distinta-->
+        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium fugiat velit enim aut ratione officiis architecto laboriosam aperiam quod, ab nisi fuga ipsa esse omnis consequatur quo, soluta, natus officia.</p>
+    
+
+        <!--Tipografías negrita, itálica y Normal-->
+        <p class="font-weight-bold">Texto en negrita</p>
+        <p class="font-italic">Texto en negrita</p>
+        <p class="font-weight-normal">Texto en negrita</p>
+        <hr>
+
+        <!--Transformaciones de texto: MAYUSCULAS, minúsculas, -->
+        <p class="text-uppercase">en mayúsculas</p>
+        <p class="text-lowercase">EN MINÚSCULAS</p>
+        <p class="text-capitalize">en capitalize</p>
+
+        <!--Añadiendo citas en nuestros párrafos-->
+        <hr>
+        <blockquote class="blockquote">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus earum ipsa nesciunt ducimus sunt voluptatum, quidem a culpa quis voluptas consectetur aperiam, iure placeat fugit fuga harum corrupti nemo architecto?</p>
+        </blockquote>
+
+        <blockquote>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga provident nisi, accusamus similique voluptate soluta eius veniam animi a, non repudiandae maiores dolorem laborum illum. Fugit, ea. Pariatur, quod</p>
+
+            <!--Recordar que el footer no solamente se usa para para pie de página, también puede ser usado para textos-->
+            <footer class="blockquote">Alguien Famoso <cite class="origen de la cita">origen de la cita</cite></footer>
+        </blockquote>
+
+
+    </body>
+
+    <!--3. Pero antes de los archivos Javascript, Bootstrap necesita algunos elementos para trabajar: JQUERY, Popper-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+
+    <!--2. Agregando los archivos Javascript de bootstrap, estos son útiles si necesitamos por ejemplo disparar
+        Modals, disparar eventos, entre otros, ojo, agregar al final-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</html>
