@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introducción Al Curso</title>
+
+        <!--1. Agregar la CDN de Bootstrap, con esto, obtenemos bootstrap desde un recurso remoto sin
+            Necesidad de tenerlo en el local-->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <!--El siguiente div usa la propiedad 'crearfix' para limpiar el efecto flotar que tienen los div internos-->
+        <div class="clearfix">
+
+            <!--Este div ahora está flotando a la izquierda-->
+            <div class="float-left bg-success">
+                <p class="">Estoy flotando a la izquierda</p>    
+            </div>
+            
+            <!--Este div flotará a la derecha-->
+            <div class="float-right bg-success">
+                <p>No estoy flotando</p>
+            </div>
+
+        </div>
+        
+        <!--Como el div superior limpió la propiedad float, este parrafo no flotará-->
+        <p class="bg-info">hola yo no floto porque el div que contiene a los que flotan limpió esa propiedad</p>
+        <hr><hr>
+        <br>
+
+        <!--Tambien podemos hacer que conforme cambie el tamaño de pantalla los elementos floten, como veremos a continuación-->
+        <div class="clearfix">
+            <p class="float-sm-right bg-primary">-flotaré cuando la pantalla sea pequeña</p>
+            <p class="float-md-right bg-primary">-flotaré cuando la pantalla sea mediana-</p>
+            <p class="float-lg-right bg-primary">-flotaré cuando la pantalla sea grande-</p>
+            <p class="float-xl-right bg-primary">-flotaré cuando la pantalla sea muuy grande-</p>
+            
+        </div>
+
+        <div class="clearfix">
+            <p class="float-sm-left bg-primary">-flotaré cuando la pantalla sea pequeña</p>
+            <p class="float-md-left bg-primary">-flotaré cuando la pantalla sea mediana-</p>
+            <p class="float-lg-left bg-primary">-flotaré cuando la pantalla sea grande-</p>
+            <p class="float-xl-left bg-primary">-flotaré cuando la pantalla sea muuy grande-</p>
+            
+        </div>
+
+        <hr>
+        <hr>
+
+        <!--Los elementos a continuación estan flotando el primero a la izquierda, el segundo a la derecha, es una buena forma de 
+        posicionarlos uno al lado del otro-->
+
+        <div class="clearfix">
+
+            <button class="btn btn-danger float-left">floto a la izquierda</button>
+            <button class="btn btn-success float-right">floto a la derecha</button>
+
+        </div>
+        <br>
+        <br>
+
+        <!--Este bonito efecto permite que una vez el scroll exceda su visibilidad, podamos seguirlo mirando fijo en la parte superior-->
+        <div class="bg-warning text-center sticky-top">
+                <h3 class="">
+                    Estaré fijo a la cima cuando el scroll sobrepase mi visibilidad
+                </h3>
+        </div>
+
+        <h1 class="fixed-top bg-danger">Estaré siempre fijo en la parte superior</h1>
+
+        <footer class="fixed-bottom text-center bg-danger">
+
+            <p>2020- Estaté visible siempre aquí abajo</p>
+        </footer>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas repellat provident nemo, illum fuga sunt similique velit, hic ratione nam beatae, sequi cumque assumenda ipsum sapiente tempora pariatur molestiae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas repellat provident nemo, illum fuga sunt similique velit, hic ratione nam beatae, sequi cumque assumenda ipsum sapiente tempora pariatur molestiae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas repellat provident nemo, illum fuga sunt similique velit, hic ratione nam beatae, sequi cumque assumenda ipsum sapiente tempora pariatur molestiae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas repellat provident nemo, illum fuga sunt similique velit, hic ratione nam beatae, sequi cumque assumenda ipsum sapiente tempora pariatur molestiae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas repellat provident nemo, illum fuga sunt similique velit, hic ratione nam beatae, sequi cumque assumenda ipsum sapiente tempora pariatur molestiae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas repellat provident nemo, illum fuga sunt similique velit, hic ratione nam beatae, sequi cumque assumenda ipsum sapiente tempora pariatur molestiae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas repellat provident nemo, illum fuga sunt similique velit, hic ratione nam beatae, sequi cumque assumenda ipsum sapiente tempora pariatur molestiae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas repellat provident nemo, illum fuga sunt similique velit, hic ratione nam beatae, sequi cumque assumenda ipsum sapiente tempora pariatur molestiae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas repellat provident nemo, illum fuga sunt similique velit, hic ratione nam beatae, sequi cumque assumenda ipsum sapiente tempora pariatur molestiae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas repellat provident nemo, illum fuga sunt similique velit, hic ratione nam beatae, sequi cumque assumenda ipsum sapiente tempora pariatur molestiae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas repellat provident nemo, illum fuga sunt similique velit, hic ratione nam beatae, sequi cumque assumenda ipsum sapiente tempora pariatur molestiae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas repellat provident nemo, illum fuga sunt similique velit, hic ratione nam beatae, sequi cumque assumenda ipsum sapiente tempora pariatur molestiae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas repellat provident nemo, illum fuga sunt similique velit, hic ratione nam beatae, sequi cumque assumenda ipsum sapiente tempora pariatur molestiae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas repellat provident nemo, illum fuga sunt similique velit, hic ratione nam beatae, sequi cumque assumenda ipsum sapiente tempora pariatur molestiae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas repellat provident nemo, illum fuga sunt similique velit, hic ratione nam beatae, sequi cumque assumenda ipsum sapiente tempora pariatur molestiae!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas repellat provident nemo, illum fuga sunt similique velit, hic ratione nam beatae, sequi cumque assumenda ipsum sapiente tempora pariatur molestiae!</p>
+        
+    </body>
+
+    <!--3. Pero antes de los archivos Javascript, Bootstrap necesita algunos elementos para trabajar: JQUERY, Popper-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+
+    <!--2. Agregando los archivos Javascript de bootstrap, estos son útiles si necesitamos por ejemplo disparar
+        Modals, disparar eventos, entre otros, ojo, agregar al final-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</html>

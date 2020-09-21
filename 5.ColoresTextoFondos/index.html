@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introducción Al Curso</title>
+
+        <!--1. Agregar la CDN de Bootstrap, con esto, obtenemos bootstrap desde un recurso remoto sin
+            Necesidad de tenerlo en el local-->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+        
+        <!--Bootstrap nos ofrece algunos colores por defecto, estos colores son sobre todo para denorar
+            Estados de nuestra aplicación:
+            Success: Verde -- Exitoso
+            Danger: Amarillo -- Advertencia 
+            Primary: Azul --
+            Danger: Rojo -- Alerta 
+        -->
+        <div> 
+            <p class="text-primary bg-success">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, nesciunt. Soluta adipisci rem, animi omnis, perferendis ipsam libero magni eos sapiente distinctio, quos qui minima ad repellendus porro eligendi ducimus.</p>
+        </div>
+
+        <div class="text-success bg-primary"> 
+            <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, nesciunt. Soluta adipisci rem, animi omnis, perferendis ipsam libero magni eos sapiente distinctio, quos qui minima ad repellendus porro eligendi ducimus.</p>
+        </div>
+
+        <div> 
+            <p class="text-info bg-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, nesciunt. Soluta adipisci rem, animi omnis, perferendis ipsam libero magni eos sapiente distinctio, quos qui minima ad repellendus porro eligendi ducimus.</p>
+        </div>
+
+        <div> 
+            <p class="text-mutted bg-danger">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, nesciunt. Soluta adipisci rem, animi omnis, perferendis ipsam libero magni eos sapiente distinctio, quos qui minima ad repellendus porro eligendi ducimus.</p>
+        </div>
+
+        <div> 
+            <p class="text-warning bg-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, nesciunt. Soluta adipisci rem, animi omnis, perferendis ipsam libero magni eos sapiente distinctio, quos qui minima ad repellendus porro eligendi ducimus.</p>
+        </div>
+
+        <div> 
+            <p class="text-dark bg-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, nesciunt. Soluta adipisci rem, animi omnis, perferendis ipsam libero magni eos sapiente distinctio, quos qui minima ad repellendus porro eligendi ducimus.</p>
+        </div>
+
+        <div> 
+            <p class="text-white bg-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, nesciunt. Soluta adipisci rem, animi omnis, perferendis ipsam libero magni eos sapiente distinctio, quos qui minima ad repellendus porro eligendi ducimus.</p>
+        </div>
+
+        <div class="row bg-info">
+            <div class="col-12 clearfix">
+
+                <div class="col-6 bg-danger float-left">
+                    <h3 class="text-center">hola</h3>
+                    <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestias quae dolorum pariatur eligendi cum voluptatem distinctio natus quasi nesciunt expedita itaque animi dolore, vel dignissimos eaque, deleniti tempore consequuntur.</p>
+                </div>
+                <div class="col-6  float-right">
+                    <h3 class="text-center">hola</h3>
+                    <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet id harum ea labore numquam delectus excepturi reprehenderit alias in. Libero adipisci commodi enim, quisquam modi praesentium fugiat dignissimos facilis sint.</p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row bg-success">
+            <div class=" col-12 bg-primary">
+                <div class="col-6 text-justify bg-warning">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptatibus velit facere eveniet assumenda veritatis nesciunt, iusto obcaecati reprehenderit minus distinctio ducimus dignissimos quis odit voluptas, temporibus necessitatibus aliquid maiores!</p>
+                </div>
+                <div class="col-6 text-justify bg-warning">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptatibus velit facere eveniet assumenda veritatis nesciunt, iusto obcaecati reprehenderit minus distinctio ducimus dignissimos quis odit voluptas, temporibus necessitatibus aliquid maiores!</p>
+                </div> 
+            </div>
+
+            
+                <div class="col-5 text-justify">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptatibus velit facere eveniet assumenda veritatis nesciunt, iusto obcaecati reprehenderit minus distinctio ducimus dignissimos quis odit voluptas, temporibus necessitatibus aliquid maiores!</p>
+                </div>
+                <div class="col-5 text-justify">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptatibus velit facere eveniet assumenda veritatis nesciunt, iusto obcaecati reprehenderit minus distinctio ducimus dignissimos quis odit voluptas, temporibus necessitatibus aliquid maiores!</p>
+                </div> 
+         
+                <div class="col-1 bg-dark text-light"> <h2>Hola</h2></div>
+                <div class="col-1 bg-dark text-light"> <h2>Hola</h2></div>
+            
+        </div>
+        
+        <hr>
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Holas</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, hic suscipit. Molestias accusamus distinctio harum quisquam, laudantium necessitatibus minima consequuntur adipisci earum commodi, sunt natus debitis quasi, ut eius totam.
+                </p>
+            </div>
+
+            <div class="col-2 bg-danger">
+                <p class="text-jusify text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, inventore cupiditate! Deleniti dolorum nostrum voluptatum quia quas vel rem error recusandae quos iusto eos eaque qui, eum eius debitis totam.</p>
+            </div>
+            <div class="col-2 bg-dark ">
+                <p class="text-jusify text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, inventore cupiditate! Deleniti dolorum nostrum voluptatum quia quas vel rem error recusandae quos iusto eos eaque qui, eum eius debitis totam.</p>
+            </div>
+            <div class="col-2 bg-warning">
+                <p class="text-jusify text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, inventore cupiditate! Deleniti dolorum nostrum voluptatum quia quas vel rem error recusandae quos iusto eos eaque qui, eum eius debitis totam.</p>
+            </div>
+            <div class="col-2 bg-info">
+                <p class="text-jusify text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, inventore cupiditate! Deleniti dolorum nostrum voluptatum quia quas vel rem error recusandae quos iusto eos eaque qui, eum eius debitis totam.</p>
+            </div>
+            <div class="col-2 bg-primary">
+                <p class="text-jusify text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, inventore cupiditate! Deleniti dolorum nostrum voluptatum quia quas vel rem error recusandae quos iusto eos eaque qui, eum eius debitis totam.</p>
+            </div>
+            <div class="col-2 bg-secondary">
+                <p class="text-jusify text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, inventore cupiditate! Deleniti dolorum nostrum voluptatum quia quas vel rem error recusandae quos iusto eos eaque qui, eum eius debitis totam.</p>
+            </div>
+
+        </div>
+
+    
+        
+    </body>
+
+    <!--3. Pero antes de los archivos Javascript, Bootstrap necesita algunos elementos para trabajar: JQUERY, Popper-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+
+    <!--2. Agregando los archivos Javascript de bootstrap, estos son útiles si necesitamos por ejemplo disparar
+        Modals, disparar eventos, entre otros, ojo, agregar al final-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</html>
