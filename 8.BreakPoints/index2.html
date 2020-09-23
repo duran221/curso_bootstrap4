@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introducción Al Curso</title>
+
+        <!--1. Agregar la CDN de Bootstrap, con esto, obtenemos bootstrap desde un recurso remoto sin
+            Necesidad de tenerlo en el local-->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+
+    <!--En esta clase del curso de bootstrap 4, aprenderemos a utilizar las media querys y las medidas por 
+        defecto que utliza el framework para adapatarse a distintos tamaños de los dispositos como smartphones,
+         laptops, pcs y más.-->
+
+    <!--Esto nos permite interactuar con los distintos tamaños de pantalla permitiendo cambiar atributos
+        CSS dependiendo del tamaño de pantalla del dispositivo a usar-->
+    <style media="screen">
+        
+        /*Cambio en pequeños dispositivos móviles, los estilos será de este tamaño hasta que el tamaño sea excedido*/
+        
+        /*        Importante El órden si importa    para el caso del max-width debe ir de menor a mayor  */
+        
+        @media( max-width: 1200px){
+
+            body{
+                background: red;
+            }
+            
+        }
+
+        
+        /*Cambio en pequeños dispositivos tablets*/
+        @media( max-width: 992px){
+
+            body{
+                background: blue;
+            }
+
+        }
+
+        
+        /*Cambio en pequeños equipos de escritorio*/
+        @media( max-width: 768px){
+
+            body{
+                background: yellow;
+            }
+
+        }
+
+        /*Cambio en pequeños dispositivos muy grandes*/
+        @media( max-width: 576px){
+
+            body{
+                background: darkblue;
+            }
+
+        }
+
+    </style>
+    <body>
+
+    </body>
+
+    <!--3. Pero antes de los archivos Javascript, Bootstrap necesita algunos elementos para trabajar: JQUERY, Popper-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+
+    <!--2. Agregando los archivos Javascript de bootstrap, estos son útiles si necesitamos por ejemplo disparar
+        Modals, disparar eventos, entre otros, ojo, agregar al final-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</html>

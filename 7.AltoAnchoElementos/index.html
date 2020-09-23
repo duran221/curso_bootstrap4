@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introducción Al Curso</title>
+
+        <!--1. Agregar la CDN de Bootstrap, con esto, obtenemos bootstrap desde un recurso remoto sin
+            Necesidad de tenerlo en el local-->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+    <body>
+        
+        <!--Mediante la clase h-% podemos definir el ancho de un elemento con respecto a el elemento que lo contiene-->
+
+        <div class="bg-success w-25">
+                <h3>Tengo un ancho del 25%</h3>
+        </div>
+
+        <div class="bg-success w-50">
+            <h3>Tengo un ancho del 50%</h3>
+        </div>
+
+        <div class="bg-success w-75">
+            <h3>Tengo un ancho del 75%</h3>
+        </div>
+
+        <div class="bg-success w-100">
+            <h3>Tengo un ancho del 100%</h3>
+        </div>
+
+
+        <div class="bg-primary" style="height:400px;">
+        
+            <!--Para aplicar la propiedad de alto de un div podemos usar la propiedad h que incluye
+                También diferentes porcentajes 25% - 50% - 75% - 100%
+            -->
+            <div class="h-25 w-25 bg-warning d-inline-block">
+
+                <h3>Tengo una altura del 25%</h3>
+            </div>
+
+            <div class="h-50 w-25 bg-warning d-inline-block">
+
+                <h3>Tengo una altura del 25%</h3>
+            </div>
+
+            <div class="h-75 w-25 bg-warning d-inline-block">
+
+                <h3>Tengo una altura del 25%</h3>
+            </div>
+
+            <div class="h-100 bg-warning d-inline-block">
+
+                <h3>Tengo una altura del 25%</h3>
+            </div>
+
+            
+
+        </div>
+
+        
+    </body>
+
+    <!--3. Pero antes de los archivos Javascript, Bootstrap necesita algunos elementos para trabajar: JQUERY, Popper-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+
+    <!--2. Agregando los archivos Javascript de bootstrap, estos son útiles si necesitamos por ejemplo disparar
+        Modals, disparar eventos, entre otros, ojo, agregar al final-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</html>
