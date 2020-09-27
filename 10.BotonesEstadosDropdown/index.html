@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introducción Al Curso</title>
+
+        <!--1. Agregar la CDN de Bootstrap, con esto, obtenemos bootstrap desde un recurso remoto sin
+            Necesidad de tenerlo en el local-->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+         <!--CDN de font-awesome, la librería que nos va a permitir usar íconos-->
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+    </head>
+    <body>
+
+        <!--Podemos cambiar el estado de los botones para que cambien su comportamiento habitual
+            Mediante los siguientes estados:
+        -->
+
+        <!--Un botón inactivo-->
+        <button class="btn btn-dark disabled">Inactivo</button>
+
+        <!--Un botón activo, es decir, el botón permanece en el estado como si mantuviera activo-->
+        <button class="btn btn-dark active">Activo</button>
+
+        <button class="btn btn-dark" data-toggle="button">Botón</button>
+
+
+
+
+        <!--------------------------------DROPDOWNS----------------------------------->
+
+        <!--Ademá también podemos crear botones que funcionen como opciones desplegables como veremos a continuación
+            Las cuales nos permitirán crear menús desplegables con unos pocos pasos:    
+        -->
+        <hr>
+        <br>
+        <h3 class="display-4"> Dropdowns</h3>
+        <!--Importante, este contenedor inicializa el dropdown-->
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Categorías</button>
+
+            <!--Este contenedor almacena los ítems que van a ser mostrados en la barra de navegación-->
+            <div class="dropdown-menu bg-light">
+                <a href="#" class="dropdown-item"> <em class="fa fa-apple"></em> Manzanas</a>
+                <a href="#" class="dropdown-item"> <em class="fa fa-amazon"></em> Hortalizas</a>
+                <a href="#" class="dropdown-item"> <em class="fa fa-google-plus-square"></em>  Cebollas</a>
+                <a href="#" class="dropdown-item"> <em class="fa fa-facebook"></em> Frutos Secos</a>
+                <a href="#" class="dropdown-item"> <em class="fa fa-dashboard"></em> Otros</a>
+            </div>
+        </div>
+
+        <hr>
+        <br>
+        <!---------------------------------Agrupaciones de botones-->
+
+        <!--Una simple agrupación de botones, estos botones agrupados dan inicio a una posible barra
+            de opciones, o una básica barra de navegación
+        -->
+        <div class="btn-group">
+
+            <button class="btn btn-outline-warning">Izquierda</button>
+            <button class="btn btn-outline-primary">Centro</button>
+            <button class="btn btn-outline-dark">Derecha</button>
+
+        </div>
+
+
+
+        <!--Podemos agregar dropdowns agrupados, para ello vamos a utilizar la clase 'btn-group'-->
+        <hr>
+        <br>
+        <h3>Dropdown botones agrupados</h3>
+        <!--La siguiente agrupación nos permite tener agrupaciones de botones, esta, es la base de las barras de
+            navegación
+        -->
+        <div class="btn btn-group">
+
+            <button class="btn btn-info ">Opción 1</button>
+            <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">Opción 2</button>
+
+            <!--Este contenedor almacena los ítems que van a ser mostrados en la barra de navegación-->
+            <div class="dropdown-menu bg-light">
+                <a href="#" class="dropdown-item"> <em class="fa fa-apple"></em> Manzanas</a>
+                <a href="#" class="dropdown-item"> <em class="fa fa-amazon"></em> Hortalizas</a>
+                <a href="#" class="dropdown-item"> <em class="fa fa-google-plus-square"></em>  Cebollas</a>
+                <a href="#" class="dropdown-item"> <em class="fa fa-facebook"></em> Frutos Secos</a>
+                <a href="#" class="dropdown-item"> <em class="fa fa-dashboard"></em> Otros</a>
+            </div>
+
+        </div>
+
+        <hr>
+        <hr>
+        <br>
+
+        <!--Agrupaciones horizontales, por ejemplo para una paginación-->
+
+        <h3 class="display-4">Este puede ser un perfecto ejemplo de una paginación</h3>
+        <!--Contenedor de la barra horizontal que contiene la botonera-->
+        <div class="btn btn-toolbar" role="toolbar">
+
+            <!--Un contenedor que me permite agrupar los botones con un margen derecho de 2-->
+            <div class="btn-group mr-2">
+                <button class="btn btn-primary">1</button>
+                <button class="btn btn-primary">2</button>
+                <button class="btn btn-primary">3</button>
+                <button class="btn btn-primary">4</button>
+                <button class="btn btn-primary">5</button>
+            </div>
+
+            <!--Otro contenedor que me permite agrupar los botones con un margen derecho de 2-->
+            <div class="btn-group mr-2">
+                <button class="btn btn-dark disabled">.....</button>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-primary">30</button>
+                <button class="btn btn-primary">31</button>               
+            </div>
+
+            <!--Este botón quedó por fuera de la agrupación, sin embargo, como pertenece al contenedor principal
+                También se enlista muy cerca
+            -->
+            <button class="btn btn-primary">32</button>
+        </div>
+
+        <!--Aquí un ejemplo que permite ilustrar la diferencia entre la agrupación que bootstrap hace por nosotros
+            y los típicos botones continuos    
+        -->
+        <h3>Diferencia, Estos botones no están agrupados, pese a estar uno justo después del otro</h3>
+        <button class="btn btn-primary">32</button>
+        <button class="btn btn-primary">32</button>
+        <button class="btn btn-primary">32</button>
+
+        <hr>
+        <br>
+
+
+        <!--No solamente podemos tener listas de botones agrupados, también podemos tener botones agrupados
+            de manera vertical, con lo cual este puede ser quizá el inicio a una barra de navegación responsive
+            quizá    
+        -->
+
+        <h3 class="display-4">Agrupaciones verticales</h3>
+        <div  class="btn-group-vertical">
+            <button class="btn btn-warning"><em class="fa fa-facebook"></em> Primer</button>
+            <button class="btn btn-warning"><em class="fa fa-mobile-phone"></em> Segundo</button>
+            <button class="btn btn-warning"><em class="fa fa-adn"></em> Tercero</button>
+
+        </div>
+
+        <div class="btn-group-vertical">
+            <button class="btn btn-primary">Primer</button>
+            <button class="btn btn-primary">Segundo</button>
+            <button class="btn btn-primary">Tercero</button>
+
+        </div>
+
+        <div class="btn-group-vertical">
+            <button class="btn btn-secondary">Primer</button>
+            <button class="btn btn-secondary">Segundo</button>
+            <button class="btn btn-secondary">Tercero</button>
+
+        </div>
+        
+        <br>
+        <br>
+
+
+    </body>
+
+    <!--3. Pero antes de los archivos Javascript, Bootstrap necesita algunos elementos para trabajar: JQUERY, Popper-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+
+    <!--2. Agregando los archivos Javascript de bootstrap, estos son útiles si necesitamos por ejemplo disparar
+        Modals, disparar eventos, entre otros, ojo, agregar al final-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</html>
