@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción Al Curso</title>
+
+    <!--1. Agregar la CDN de Bootstrap, con esto, obtenemos bootstrap desde un recurso remoto sin
+            Necesidad de tenerlo en el local-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body class="container">
+
+
+    <h4 class="display-4 text-center">Estilizando una lista de manera sencilla</h4>
+    <!--Podemos estilizar listas de manera simple mediante las clases 'list-group' y 'list-group-item' para
+        Cada uno de los ítems de la lista
+    -->
+    <ul class="list-group text-center">
+        <li class="list-group-item bg-info">Elemento 1</li>
+        <li class="list-group-item">Elemento 2</li>
+        <li class="list-group-item bg-light">Elemento 3</li>
+        <li class="list-group-item bg-info">Elemento 4</li>
+        <li class="list-group-item bg-light">Elemento 5</li>
+
+    </ul>
+
+    <!--También podemos estilizar listas de enlaces, veamos-->
+    <hr>
+    <br>
+    <h4 class="display-4 text-center">También se puede usar enlaces</h4>
+    <ul class="list-group">
+
+        <a href="#" class="list-group-item text-center">Enlace 1</a>
+        <a href="#" class="list-group-item text-center">Enlace 2</a>
+        <a href="#" class="list-group-item text-center">Enlace 3</a>
+        <a href="#" class="list-group-item text-center">Enlace 4</a>
+
+    </ul>
+
+    <!--Usando colores para nuestras listas, anteriormente mostramos una forma de añadir color de fondo,
+        Sin embargo, podemos además usar los siguientes estilos:
+    -->
+    <hr>
+    <br>
+    <h3 class="disp display-4 text-center">Colores en Listas</h3>
+
+    <ul class="list-group">
+        <a href="#" class="list-group-item list-group-item-info text-center">ÍTEM MENÚ 1</a>
+        <a href="#" class="list-group-item list-group-item-light text-center">ÍTEM MENÚ 2</a>
+        <a href="#" class="list-group-item list-group-item-primary text-center">ÍTEM MENÚ 3</a>
+        <a href="#" class="list-group-item list-group-item-secondary text-center">ÍTEM MENÚ 4</a>
+        <a href="#" class="list-group-item list-group-item-success text-center">ÍTEM MENÚ 5</a>
+        <a href="#" class="list-group-item list-group-item-dark text-center">ÍTEM MENÚ 6</a>
+    </ul>
+
+    <hr>
+    <br>
+
+    <!--Badges: Los badges nos permiten notificar mensajes, por ejemplo cantidades en los ítems, entre otras
+        Cosas, veámos
+    -->
+
+    <h4 class="display-4 text-center">Notificaciones en las listas 'Badges'</h4>
+    <ul class="list- group">
+        <a href="#" class="list-group-item list-group-item-info"> Mensajes</a>
+        <!--Una notificación cuadrada de color secondary-->
+        <a href="#" class="list-group-item"> Mensajes <span class="badge badge-secondary">12</span></a>
+        <!--Una notificación con forma circular de color verde-->
+        <a href="#" class="list-group-item"> Mensajes <span class="badge badge-pill badge-success">18</span></a>
+
+        <!--Si queremos alinear hacia la derecha el ítem es un poquito más complejo-->
+
+        <a href="#" class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">Mensajes <span class="badge badge-pill badge-dark">99</span></a>
+
+
+    </ul>
+
+
+
+</body>
+
+<!--3. Pero antes de los archivos Javascript, Bootstrap necesita algunos elementos para trabajar: JQUERY, Popper-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+
+<!--2. Agregando los archivos Javascript de bootstrap, estos son útiles si necesitamos por ejemplo disparar
+        Modals, disparar eventos, entre otros, ojo, agregar al final-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</html>
