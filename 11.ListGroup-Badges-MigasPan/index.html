@@ -79,7 +79,65 @@
 
     </ul>
 
+    <hr>
+    <br>
 
+    <!--Como la clase 'list-group' de Bootstrap no es únicamente para listas, también puede ser usada
+        con contenedores como divs, entonces, bajo ese mismo órden de ideas podemos hacer tarjetas aprovechando
+        ese estilo anotaciones:
+        -justify-content-between: alinea dos elementos uno al frente del otro, es como si partiece el contenido,
+        en partes iguales
+        -list-group-item-action: permite crear un efecto hover cada que el cursor pasa encima del contenedor
+        -active: subraya el contenedor como si estuviese activo
+    -->
+    <h3 class="display-4 text-center">Ejemplo de una etiqueta usando List group</h3>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-between">
+                <h4 class="mb-1">Título de la etiqueta</h4>
+                <small>3 días aprox.</small>
+            </div>
+            <span class="badge badge-pill badge-success">12</span>
+            <p class="mb-2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum obcaecati exercitationem vero labore dignissimos. Dolore quod eveniet alias itaque rerum labore, quaerat quae commodi inventore, totam et in, cupiditate eum.</p>
+        </a>
+    </div>
+
+    <hr>
+    <br>
+
+    <h4 class="display-4 text-center">Migas de Pan o BreadCrumbs</h4>
+
+    <!--Los breadcrumbs o migas de pan permiten tener por ejemplo en nuestras páginas, secciones de navegación
+        como veremos a continuación, eso nos sirve para ir manejando una opción de enlaces en nuestra 
+        página
+    -->
+
+    <ol class="breadcrumb">
+
+        <li class="breadcrumb-item">clientes</li>
+        <li class="breadcrumb-item">registros</li>
+        <li class="breadcrumb-item">corporativo</li>
+        <li class="breadcrumb-item text-success active">nav</li>
+
+    </ol>
+
+    <!--Como podemos esperar el resultado es una serie de enlaces que podemos usar como navegación
+        en nuestras aplicaciones    
+    -->
+
+
+    <ol class="breadcrumb">
+
+        <a href="#" class="breadcrumb-item text-dark">Clientes</a>
+        <a href="#" class="breadcrumb-item">Registro</a>
+        <a href="#" class="breadcrumb-item">Otro</a>
+        <li class="breadcrumb-item text-success active">nav</li>
+
+    </ol>
+
+
+    <hr>
+    <br>
 
 </body>
 
