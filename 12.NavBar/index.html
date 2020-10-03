@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción Al Curso</title>
+
+    <!--1. Agregar la CDN de Bootstrap, con esto, obtenemos bootstrap desde un recurso remoto sin
+            Necesidad de tenerlo en el local-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--CDN de font-awesome, la librería que nos va a permitir usar íconos-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!--Una barra de navegación sencilla, como podemos apreciar la barra no tiene un espaciado apropiado,
+    y menos una apariencia agradable las clases que hacen la magia son 'navbar' y 'navbar-nav' para la lista-->
+    <h4 class="display-4">Una simple barra de navegación</h4>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+        <ul class="navbar-nav">
+            <li><a href="#">Inicio</a> </li>
+            <li><a href="#">Acerca De</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Categorías</a></li>
+
+        </ul>
+
+    </nav>
+
+    <hr>
+    <br>
+
+    <h4>Una barra de navegación con un poco más de estilo</h4>
+    <!--la clase navbar-expand-md indica una expansión de la lista cuando la pantalla sea mediana, cuando
+    la pantalla sea pequeña la barra de navegación colapsará en modo vertical como una lista en forma de columna-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+        <!--La clase navbar-nav es imprescindible para una correcta alineación de los elementos de la lista-->
+        <ul class="navbar-nav">
+            <!--Las clases nav-item del elemento y nav-link del enlace complementan el estilo para una 
+                barra de navegación presentable
+            -->
+            <li class="nav-item"><a href="#" class="nav-link">Inicio</a> </li>
+            <li class="nav-item"> <a href="#" class="nav-link">Acerca De</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Productos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Categorías</a></li>
+        </ul>
+
+    </nav>
+
+
+    <hr>
+    <br>
+    <h4>Una barra de navegación alineada a la izquierda y con el título de página que puede servir como ícono</h4>
+    <br>
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+
+        <a href="#" class="navbar-brand  text-light">
+            Nuestra App
+        </a>
+
+        <!--La clase navbar-nav es imprescindible para una correcta alineación de los elementos de la lista
+            'ml-auto': permite alinear el elemento hacia la izquierda con la propiedad margin-left:auto
+        -->
+        <ul class="navbar-nav ml-auto">
+            <!--Las clases nav-item del elemento y nav-link del enlace complementan el estilo para una 
+                barra de navegación presentable
+            -->
+            <li class="nav-item"><a href="#" class="nav-link  text-light">Inicio</a> </li>
+            <li class="nav-item"> <a href="#" class="nav-link  text-light">Acerca De</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-light">Productos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-light">Categorías</a></li>
+        </ul>
+
+    </nav>
+
+    <hr>
+    <br>
+
+    <!--Como vimos en el ejemplo anterior esta barra no colapsa hacia la izquierda, es decir, ella alinea
+    los elemenos efectivamente en forma vertical pero como el margen izquierda está en automático, se queda
+    allí en la izquierda alineada, por ende vamos a usar un div que permita colapsar la barra:
+    -->
+    <h4 class="display-4">Barra de navegación que colapsa a la izquierda y con margen</h4>
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+
+        <!--Este div denominado container permite dar un margen especial a nuestra barra de navegación,
+            para ver más al detalle cómo queda este contenedor hemos pintado el div de color verde
+        -->
+        <div class="container bg-success my-3">
+            <a href="#" class="navbar-brand  text-light">
+                <em class="fa fa-apple"></em> Nuestra App
+            </a>
+
+            <!--Este div permite colapsar hacia la izquierda la barra de navegación cuando el tamaño sea
+                Responsivo
+            -->
+            <div class="navbar-collapse">
+                <!--La clase navbar-nav es imprescindible para una correcta alineación de los elementos de la lista
+                    'ml-auto': permite alinear el elemento hacia la izquierda con la propiedad margin-left:auto
+                -->
+                <ul class="navbar-nav ml-auto">
+                    <!--Las clases nav-item del elemento y nav-link del enlace complementan el estilo para una 
+                        barra de navegación presentable
+                    -->
+                    <li class="nav-item"><a href="#" class="nav-link  text-light">Inicio</a> </li>
+                    <li class="nav-item"> <a href="#" class="nav-link  text-light">Acerca De</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Productos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Categorías</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <hr>
+    <br>
+    <br>
+
+    <h5 class="display-4">Una barra de navegación totalmente responsiva con un botón 'toggle'
+    </h5>
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+
+        <!--Este div denominado container permite dar un margen especial a nuestra barra de navegación,
+            para ver más al detalle cómo queda este contenedor hemos pintado el div de color verde
+        -->
+        <div class="container bg-success my-3">
+            <a href="#" class="navbar-brand  text-light">
+                <em class="fa fa-apple"></em> Nuestra App
+            </a>
+
+            <!--Este botónsito aparece como por arte de magia cuando la pantalla es inferior a un dispositivo mediano
+                la clase 'navbar-toggler' es impreiscindible para ello
+                
+                data-toggle= collapse : Permite implementar evento para que al presionar el botón se collapse un
+                elemento específico, se oculte
+
+                data-target -> Me permite especificar mediante el id el elemento que vamos a mostrar u ocultar
+            -->
+            <button type="button" class="navbar-toggler bg-warning" data-toggle="collapse" data-target="#navbarResponsive">
+                <!--Un sencillo ícono con la forma de hamburguesa-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Este div permite colapsar hacia la izquierda la barra de navegación cuando el tamaño sea
+                Responsivo
+            -->
+
+            <!--La propiedad collapse indico que por defecto se muestre oculta la navegación cuando
+                El tamaño sea inferior a una pantalla mediana
+            -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <!--La clase navbar-nav es imprescindible para una correcta alineación de los elementos de la lista
+                    'ml-auto': permite alinear el elemento hacia la izquierda con la propiedad margin-left:auto
+                -->
+                <ul class="navbar-nav ml-auto">
+                    <!--Las clases nav-item del elemento y nav-link del enlace complementan el estilo para una 
+                        barra de navegación presentable
+                    -->
+                    <li class="nav-item"><a href="#" class="nav-link  text-light">Inicio</a> </li>
+                    <li class="nav-item"> <a href="#" class="nav-link  text-light">Acerca De</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Productos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Categorías</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+</body>
+
+<!--3. Pero antes de los archivos Javascript, Bootstrap necesita algunos elementos para trabajar: JQUERY, Popper-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+
+<!--2. Agregando los archivos Javascript de bootstrap, estos son útiles si necesitamos por ejemplo disparar
+        Modals, disparar eventos, entre otros, ojo, agregar al final-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</html>
