@@ -175,6 +175,220 @@
 
     </nav>
 
+    <hr>
+    <br>
+    <h5 class="display-4 text-center">Estilo de una barra de navegación con formulario de búsqueda</h5>
+    <br>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+
+        <!--Este div denominado container permite dar un margen especial a nuestra barra de navegación,
+            para ver más al detalle cómo queda este contenedor hemos pintado el div de color verde
+        -->
+        <div class="container bg-success my-3">
+            <a href="#" class="navbar-brand  text-light">
+                <em class="fa fa-apple"></em> Nuestra App
+            </a>
+
+            <!--Este botónsito aparece como por arte de magia cuando la pantalla es inferior a un dispositivo mediano
+                la clase 'navbar-toggler' es impreiscindible para ello
+                
+                data-toggle= collapse : Permite implementar evento para que al presionar el botón se collapse un
+                elemento específico, se oculte
+
+                data-target -> Me permite especificar mediante el id el elemento que vamos a mostrar u ocultar
+            -->
+            <button type="button" class="navbar-toggler bg-warning" data-toggle="collapse" data-target="#navbarResponsive2">
+                <!--Un sencillo ícono con la forma de hamburguesa-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Este div permite colapsar hacia la izquierda la barra de navegación cuando el tamaño sea
+                Responsivo
+            -->
+
+            <!--La propiedad collapse indico que por defecto se muestre oculta la navegación cuando
+                El tamaño sea inferior a una pantalla mediana
+            -->
+            <div class="collapse navbar-collapse" id="navbarResponsive2">
+                <!--La clase navbar-nav es imprescindible para una correcta alineación de los elementos de la lista
+                    'ml-auto': permite alinear el elemento hacia la izquierda con la propiedad margin-left:auto
+                -->
+                <ul class="navbar-nav ml-auto">
+                    <!--Las clases nav-item del elemento y nav-link del enlace complementan el estilo para una 
+                        barra de navegación presentable
+                    -->
+                    <li class="nav-item"><a href="#" class="nav-link  text-light">Inicio</a> </li>
+                    <li class="nav-item"> <a href="#" class="nav-link  text-light">Acerca De</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Productos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Categorías</a></li>
+                </ul>
+
+                <!--Este formulario con apariencia en linea permite completar nuestra navegación con una linda barra de búsqueda-->
+                <form class="form-inline">
+                    <!--La clase form-control permite tener una caja de texto bonita-->
+                    <input type="text" class="form-control" placeholder="Búsqueda">
+                    <button class="btn btn-outline-light">
+                        Buscar
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <hr>
+    <br>
+    <h5 class="display-4 text-center">Ítems embebidos en la barra de navegación</h5>
+    <!--Una barra de navegación con una lista de menús desplegables, por ejemplo puede ser útil para unas categorías-->
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+
+        <!--Este div denominado container permite dar un margen especial a nuestra barra de navegación,
+            para ver más al detalle cómo queda este contenedor hemos pintado el div de color verde
+        -->
+        <div class="container bg-success my-3">
+            <a href="#" class="navbar-brand  text-light">
+                <em class="fa fa-apple"></em> Nuestra App
+            </a>
+
+            <!--Este botónsito aparece como por arte de magia cuando la pantalla es inferior a un dispositivo mediano
+                la clase 'navbar-toggler' es impreiscindible para ello
+                
+                data-toggle= collapse : Permite implementar evento para que al presionar el botón se collapse un
+                elemento específico, se oculte
+
+                data-target -> Me permite especificar mediante el id el elemento que vamos a mostrar u ocultar
+            -->
+            <button type="button" class="navbar-toggler bg-warning" data-toggle="collapse" data-target="#navbarResponsive3">
+                <!--Un sencillo ícono con la forma de hamburguesa-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Este div permite colapsar hacia la izquierda la barra de navegación cuando el tamaño sea
+                Responsivo
+            -->
+
+            <!--La propiedad collapse indico que por defecto se muestre oculta la navegación cuando
+                El tamaño sea inferior a una pantalla mediana
+            -->
+            <div class="collapse navbar-collapse" id="navbarResponsive3">
+                <!--La clase navbar-nav es imprescindible para una correcta alineación de los elementos de la lista
+                    'ml-auto': permite alinear el elemento hacia la izquierda con la propiedad margin-left:auto
+                -->
+                <ul class="navbar-nav ml-auto">
+                    <!--Las clases nav-item del elemento y nav-link del enlace complementan el estilo para una 
+                        barra de navegación presentable
+                    -->
+                    <li class="nav-item"><a href="#" class="nav-link  text-light">Inicio</a> </li>
+                    <li class="nav-item"> <a href="#" class="nav-link  text-light">Acerca De</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Productos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Categorías</a></li>
+
+                    <!--Un ejemplo sencillo de una lista embebida de ítems, por ejemplo para categorías-->
+                    <li class="nav-item dropdown">
+                        <!--El data-toggle es simplemente para la flechita que aparece-->
+                        <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">
+                            Enlace Padre
+                        </a>
+                        <!--Este div contiene los sub ítems que contendrá el desplegable-->
+                        <div class="dropdown-menu bg-success">
+                            <a href="#" class="dropdown-item">Sub Enlace 1</a>
+                            <a href="#" class="dropdown-item">Sub Enlace 2</a>
+                            <a href="#" class="dropdown-item">Sub Enlace 3</a>
+                            <a href="#" class="dropdown-item">Sub Enlace 4</a>
+                        </div>
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <hr>
+    <br>
+    <h5 class="display-4 text-center">Una barra de navegación con ítems muy embebidos</h5>
+
+
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+
+        <!--Este div denominado container permite dar un margen especial a nuestra barra de navegación,
+            para ver más al detalle cómo queda este contenedor hemos pintado el div de color verde
+        -->
+        <div class="container bg-success my-3">
+            <a href="#" class="navbar-brand  text-light">
+                <em class="fa fa-apple"></em> Nuestra App
+            </a>
+
+            <!--Este botónsito aparece como por arte de magia cuando la pantalla es inferior a un dispositivo mediano
+                la clase 'navbar-toggler' es impreiscindible para ello
+                
+                data-toggle= collapse : Permite implementar evento para que al presionar el botón se collapse un
+                elemento específico, se oculte
+
+                data-target -> Me permite especificar mediante el id el elemento que vamos a mostrar u ocultar
+            -->
+            <button type="button" class="navbar-toggler bg-warning" data-toggle="collapse" data-target="#navbarResponsive3">
+                <!--Un sencillo ícono con la forma de hamburguesa-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Este div permite colapsar hacia la izquierda la barra de navegación cuando el tamaño sea
+                Responsivo
+            -->
+
+            <!--La propiedad collapse indico que por defecto se muestre oculta la navegación cuando
+                El tamaño sea inferior a una pantalla mediana
+            -->
+            <div class="collapse navbar-collapse" id="navbarResponsive3">
+                <!--La clase navbar-nav es imprescindible para una correcta alineación de los elementos de la lista
+                    'ml-auto': permite alinear el elemento hacia la izquierda con la propiedad margin-left:auto
+                -->
+                <ul class="navbar-nav ml-auto">
+                    <!--Las clases nav-item del elemento y nav-link del enlace complementan el estilo para una 
+                        barra de navegación presentable
+                    -->
+                    <li class="nav-item"><a href="#" class="nav-link  text-light">Inicio</a> </li>
+                    <li class="nav-item"> <a href="#" class="nav-link  text-light">Acerca De</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Productos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Categorías</a></li>
+
+                    <!--Un ejemplo sencillo de una lista embebida de ítems, por ejemplo para categorías-->
+                    <li class="nav-item dropdown">
+                        <!--El data-toggle es simplemente para la flechita que aparece-->
+                        <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">
+                            Enlace Padre
+                        </a>
+                        <!--Este div contiene los sub ítems que contendrá el desplegable-->
+                        <div class="dropdown-menu bg-info">
+                            <a href="#" class="dropdown-item">Sub Enlace 1</a>
+                            <a href="#" class="dropdown-item">Sub Enlace 2</a>
+                            <a href="#" class="dropdown-item">Sub Enlace 3</a>
+                            <a href="#" class="dropdown-item">Sub Enlace 4</a>
+
+                            <a class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Subcategorías</a>
+                            </a>
+
+                            <div class="dropdown-menu bg-warning text-light">
+                                <a href="#" class="dropdown-item">Sub Enlace 5</a>
+                                <a href="#" class="dropdown-item">Sub Enlace 6</a>
+                                <a href="#" class="dropdown-item">Sub Enlace 7</a>
+                                <a href="#" class="dropdown-item">Sub Enlace 8</a>
+
+
+                            </div>
+
+                        </div>
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
 
 </body>
 

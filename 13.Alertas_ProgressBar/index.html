@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción Al Curso</title>
+
+    <!--1. Agregar la CDN de Bootstrap, con esto, obtenemos bootstrap desde un recurso remoto sin
+            Necesidad de tenerlo en el local-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body class="container">
+
+    <h5 class="display-4 text-center">Estos son estilos de notificaciones</h5>
+
+    <!--Esta es una alerta sencilla la cual contiene estilos para notificar mensajes-->
+    <div class="alert alert-danger text-center">
+        <!--Título de la alerta-->
+        <strong>Esta es una alerta sencilla</strong>
+        <p>Lorem ipsun</p>
+        <!--Un sencillo enlace de nuestra alerta-->
+        <a href="#" class="alert-link">Clic aquí</a>
+
+    </div>
+
+    <div class="alert alert-success text-center">
+        <strong>Esta es una alerta roja</strong>
+        <p>Lorem ipsun</p>
+
+        <a href="#" class="alert-link">Clic aquí</a>
+    </div>
+
+    <div class="alert alert-danger text-center">
+        <strong>Esta es una alerta roja</strong>
+        <p>Lorem ipsun</p>
+
+        <a href="#" class="alert-link">Clic aquí</a>
+    </div>
+
+    <div class="alert alert-primary text-center">
+        <strong>Esta es una alerta roja</strong>
+        <p>Lorem ipsun</p>
+
+        <a href="#" class="alert-link">Clic aquí</a>
+    </div>
+
+    <div class="alert alert-light text-center">
+        <strong>Esta es una alerta roja</strong>
+        <p>Lorem ipsun</p>
+
+        <a href="#" class="alert-link">Clic aquí</a>
+    </div>
+
+    <div class="alert alert-dark text-center">
+        <strong>Esta es una alerta roja</strong>
+        <p>Lorem ipsun</p>
+
+        <a href="#" class="alert-link">Clic aquí</a>
+    </div>
+
+    <hr>
+    <br>
+
+    <h4 class="display-4 text-center">Esta es una barra de alerta con ícono para cerrar</h4>
+
+    <div class="alert alert-info ">
+        <!--Este sencillo botón cumple la función de cerrar la notificación-->
+        <button class="close" data-dismiss="alert">
+            <!--Ícono que simboliza una x 'equis'-->
+            <span>&times;</span>
+        </button>
+
+        <strong>Esta es una alerta</strong>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum saepe eius nostrum nam voluptatibus, sunt, totam sequi non necessitatibus beatae deleniti libero culpa minima autem nulla perspiciatis nobis aliquam repudiandae?</p>
+        <a href="#" class="alert-link"></a>
+    </div>
+
+    <!--Esta alerta tiene un efecto especial que permite cerrar la ventana-->
+    <div class="alert alert-success alert-dismissible fade show">
+
+        <button class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+        <strong class="text-center">Esta es una alerta con efecto</strong>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia doloremque voluptatibus magni veniam, accusantium sed facere accusamus non fugiat et modi! Sed, dicta enim. Quidem officia voluptate labore consequatur aperiam!</p>
+        <a href="#" class="alert-link">Este es un enlace</a>
+    </div>
+
+    <hr>
+    <br>
+    <h5 class="display-4 text-center">Barras de progreso</h5>
+    <br>
+    <!--Ejemplo de una sencilla barra de navegación sin estilo-->
+    <div class="progress">
+        <div class="progress-bar bg-info " style="width: 25%;"></div>
+
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar bg-primary " style="width: 50%;"></div>
+
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar bg-success" style="width: 75%;"></div>
+
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar bg-info " style="width:100%;"></div>
+
+    </div>
+
+    <h5 class="display-4 text-center">Una barra de progreso estilizada</h5>
+    <div class="progress ">
+        <div class="progress-bar bg-warning progress-bar-striped" style="width: 50%;"></div>
+    </div>
+
+    <h5 class="display-4 text-center">Una barra de progreso estilizada animada</h5>
+    <div class="progress ">
+        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 50%;"></div>
+    </div>
+
+</body>
+
+<!--3. Pero antes de los archivos Javascript, Bootstrap necesita algunos elementos para trabajar: JQUERY, Popper-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+
+<!--2. Agregando los archivos Javascript de bootstrap, estos son útiles si necesitamos por ejemplo disparar
+        Modals, disparar eventos, entre otros, ojo, agregar al final-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</html>
